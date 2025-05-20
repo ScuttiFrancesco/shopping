@@ -16,6 +16,6 @@ export const appConfig: ApplicationConfig = {
     { provide: APP_SETTINGS, useValue: appSettings },
     { provide: ErrorHandler, useClass: AppErrorHandler },
     provideAnimationsAsync(),
-    provideClientHydration(),
+    provideClientHydration(), provideAnimationsAsync(),
   ],
 };
