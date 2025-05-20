@@ -8,8 +8,6 @@ import { MatToolbar, MatToolbarRow } from '@angular/material/toolbar';
 import { MatButton } from '@angular/material/button';
 import { MatBadge } from '@angular/material/badge';
 import { CartService } from './cart.service';
-import { FeaturedComponent } from './featured/featured.component';
-import { MatProgressSpinner } from '@angular/material/progress-spinner';
 
 @Component({
   selector: 'app-root',
@@ -23,8 +21,6 @@ import { MatProgressSpinner } from '@angular/material/progress-spinner';
     MatToolbarRow,
     MatButton,
     MatBadge,
-    FeaturedComponent,
-    MatProgressSpinner
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
