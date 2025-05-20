@@ -20,10 +20,17 @@
   <div class="content">
     <router-outlet />
   </div>
+
+  @defer () {
+    <app-featured style="margin: 16px;"/>
+  } @loading(minimum 3s) {
+    <mat-spinner ngSkipHydration></mat-spinner>
+  }
+
 </main>
 
 <footer>
-  <mat-toolbar>
+  <mat-toolbar ngSkipHydration>
     <mat-toolbar-row>
       <span appCopyright> - v{{ settings.version }} </span>
     </mat-toolbar-row>
